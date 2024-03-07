@@ -1,3 +1,5 @@
+import 'package:booking_app/constant.dart';
+import 'package:booking_app/pages/homePage/homePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Booking app',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
+        useMaterial3: true
       ),
+      home: homePage(),
     );
   }
 }
