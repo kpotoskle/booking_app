@@ -1,3 +1,5 @@
+import 'package:booking_app/constant.dart';
+import 'package:booking_app/pages/homePage/section1/section1.dart';
 import 'package:flutter/material.dart';
 
 class homePage extends StatelessWidget {
@@ -6,9 +8,13 @@ class homePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-        ],
+      body: Container(
+        color: lastColor,
+        child: Column(
+          children: [
+            homeSection1()
+          ],
+        ),
       ),
     );
   }
